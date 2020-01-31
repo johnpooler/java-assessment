@@ -12,8 +12,7 @@ public class OfflineExercises {
 
 	public String multChar(String input) {
 
-		System.out.println(input+input+input);
-		input.g
+	
 
 		return "";
 
@@ -32,7 +31,7 @@ public class OfflineExercises {
 
 	public String getBert(String input) {
 		
-		input.substring(, endIndex)
+		
 
 		return "";
 	}
@@ -49,31 +48,31 @@ public class OfflineExercises {
 	// evenlySpaced(4, 60, 9) → false
 
 	public boolean evenlySpaced(int a, int b, int c) {
-		int group[] = { a, b, c };
-		int big;
-		int medium ;
-		int small ;
-		big = group[2];
-		medium=group[1];
-		small=group[0];
-		for (int i = 0; i <=3; i++) {
-			if (group[i] > small && group[i]>medium) {
-				small = group[i];
-			System.out.println(small);
-				}
-			else if (group[i] < big) {
-				medium = group[i];
-			System.out.println(medium);
-				}
-			else if (group[i] < medium) {
-				big = group[i];
-			System.out.println(big);
-				}
-			else if (medium-small==big-medium) {
-				return true;}
-			else
-				return false;
-		}
+//		int group[] = { a, b, c };
+//		int big;
+//		int medium ;
+//		int small ;
+//		big = group[2];
+//		medium=group[1];
+//		small=group[0];
+//		for (int i = 0; i <=3; i++) {
+//			if (group[i] > small && group[i]>medium) {
+//				small = group[i];
+//			System.out.println(small);
+//				}
+//			else if (group[i] < big) {
+//				medium = group[i];
+//			System.out.println(medium);
+//				}
+//			else if (group[i] < medium) {
+//				big = group[i];
+//			System.out.println(big);
+//				}
+//			else if (medium-small==big-medium) {
+//				return true;}
+//			else
+//				return false;
+//		}
 		return false;
 	
 		

@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OfflineExercises {
 
 	// Given a string, return a string where
@@ -11,10 +14,14 @@ public class OfflineExercises {
 	// multChar("Hi-There") → "HHHiii---TTThhheeerrreee"
 
 	public String multChar(String input) {
-
-	
-
-		return "";
+		String result = "";
+		for (int i = 0; i < input.length(); i++) {
+			for(int j=0;j<3;j++) {
+				result= result+input.charAt(i);
+			}
+		
+		}
+		return result;
 
 	}
 
@@ -48,6 +55,18 @@ public class OfflineExercises {
 	// evenlySpaced(4, 60, 9) → false
 
 	public boolean evenlySpaced(int a, int b, int c) {
+		List<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(a);
+		numbers.add(b);
+		numbers.add(c);
+		numbers.sort(null);
+		int checknum1= numbers.get(2)-numbers.get(1);
+		int checknum2= numbers.get(1)-numbers.get(0);
+		if(checknum1==checknum2) {
+			return true;
+		}else {
+			return false;
+		}
 //		int group[] = { a, b, c };
 //		int big;
 //		int medium ;
@@ -58,6 +77,7 @@ public class OfflineExercises {
 //		for (int i = 0; i <=3; i++) {
 //			if (group[i] > small && group[i]>medium) {
 //				small = group[i];
+		
 //			System.out.println(small);
 //				}
 //			else if (group[i] < big) {
@@ -73,7 +93,7 @@ public class OfflineExercises {
 //			else
 //				return false;
 //		}
-		return false;
+		
 	
 		
 	}
@@ -100,19 +120,22 @@ public class OfflineExercises {
 	// endsDev("devisnotcool") → false
 
 	public boolean endsDev(String input) {
-
-		if (input.endsWith("dev")) {
-			return true;
-		}
-		if (input.endsWith("Dev")) {
-			return true;
-		}
-
-		else {
-			return false;
-		}
-
+//
+//		if (input.endsWith("dev")) {
+//			return true;
+//		}
+//		if (input.endsWith("Dev")) {
+//			return true;
+//		}
+//
+//		else {
+//			return false;
+//		}
+//
+//	}
+		return input.toLowerCase().endsWith("dev");
 	}
+	
 
 	// Given a string, return the length of the largest "block" in the string.
 	// A block is a run of adjacent chars that are the same.
@@ -179,7 +202,7 @@ public class OfflineExercises {
 	// largest("555 72 86 45 10") → 15
 
 	public int largest(String arg1) {
-		System.out.println(arg1.split(" "));
+//		System.out.println(arg1.split(" "));
 		
 
 		return 0;
